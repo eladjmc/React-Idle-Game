@@ -1,0 +1,49 @@
+.StatusBar {
+  text-align: left;
+  min-height: 500px;
+  min-width: 200px;
+  background-color: #4c4a4a;
+  padding: 15px;
+
+  .lifespan-container {
+    margin-bottom: 10px;
+    .age-container {
+        margin-bottom: 4px;
+    }
+    .age-text {
+      font-size: 18px;
+      font-weight: 500;
+      color: rgb(174, 204, 255);
+    }
+    .day-text {
+        font-size: 16px;
+    }
+
+    .time-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .total-lifespan {
+        text-align: center;
+      color: rgba(255, 255, 255, 0.818);
+    }
+
+    .pause-button {
+        padding: 7px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #939393;
+        cursor: pointer;
+        box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.348);
+        transition: 0.1s linear all;
+        &:active{
+            box-shadow: none;
+            transform: scale(0.95);
+        }
+    }
+    
+  }
+}
