@@ -3,10 +3,11 @@ import { Link, useMatch } from 'react-router-dom';
 import './Navbar.scss'
 
 const NavbarLink = ({ to, children }) => {
-  const match = useMatch(to);
+  const match = useMatch(to)
+  const atBasePath = useMatch('/') && to === '/career';
   return (
     <Link
-      className={`navbar-link ${match ? 'navbar-link-selected' : ''}`}
+      className={`navbar-link ${match || (atBasePath && to === '/career') ? 'navbar-link-selected' : ''}`}
       to={to}
     >
       {children}
