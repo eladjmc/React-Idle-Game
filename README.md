@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+
+https://trello.com/c/Zthy0cLX/1-how-to-start-the-development
+
+
 ## Available Scripts
 
 In the project directory, you can run:
